@@ -1,7 +1,7 @@
 class CreateYogaClasses < ActiveRecord::Migration[6.1]
   def change
     create_table :yoga_classes do |t|
-      t.string :type 
+      t.string :yoga_type 
       t.string :intensity 
       t.string :schedule_date
       t.string :schedule_time

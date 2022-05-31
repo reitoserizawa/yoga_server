@@ -15,9 +15,8 @@ ActiveRecord::Schema.define(version: 2022_05_31_153141) do
   create_table "instructors", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "position"
     t.integer "years_of_experience"
-    t.string "home_location"
+    t.string "studio_location"
     t.string "bio"
   end
 
@@ -26,16 +25,16 @@ ActiveRecord::Schema.define(version: 2022_05_31_153141) do
     t.string "last_name"
     t.integer "phone_number"
     t.string "email"
-    t.boolean "in_training?"
+    t.boolean "in_training"
     t.string "home_location"
     t.string "bio"
   end
 
   create_table "yoga_classes", force: :cascade do |t|
-    t.string "type"
+    t.string "yoga_type"
     t.string "intensity"
-    t.string "date"
-    t.string "time"
+    t.string "schedule_date"
+    t.string "schedule_time"
     t.integer "student_id"
     t.integer "instructor_id"
   end
