@@ -45,7 +45,7 @@ class_length = ["45 minutes", "1 hour"]
         student_id: Student.ids.sample,
         yoga_type: type.sample,
         intensity: intensity.sample,
-        schedule_date: Faker::Date.between(from: '2022-06-01', to: '2022-09-01'),
+        schedule_date: Faker::Date.between(from: '2022-06-01', to: '2022-09-01').strftime("%m/%d/%Y"),
         schedule_start_time: rand(6..20).to_s + ":00",
         class_length: class_length.sample
     )
