@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
             yoga_type: params[:yoga_type],
             intensity: params[:intensity],
             schedule_date: params[:schedule_date], 
-            schedule_time: params[:schedule_time], 
+            schedule_start_time: params[:schedule_start_time], 
+            class_length: params[:class_length],
             student_id: params[:student_id], 
             instructor_id: params[:instructor_id]
         ).to_json

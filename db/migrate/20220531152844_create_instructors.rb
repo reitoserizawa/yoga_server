@@ -5,6 +5,7 @@ class CreateInstructors < ActiveRecord::Migration[6.1]
       t.string :last_name 
       t.integer :years_of_experience 
       t.string :studio_location
+      t.string :avatar
       t.string :bio
     end
   end
