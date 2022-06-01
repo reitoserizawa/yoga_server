@@ -13,7 +13,8 @@ puts "Creating instructors..."
        last_name: Faker::Name.last_name(),
        years_of_experience: rand(1..30),
        studio_location: Faker::Address.city,
-       bio: Faker::Quote.famous_last_words
+       bio: Faker::Quote.famous_last_words,
+       avatar: Faker::Avatar.image
     )
 end
 
@@ -21,7 +22,7 @@ puts "Creating students..."
 
 in_training = [true, false]
 
-20.times do |i|
+25.times do |i|
     Student.create(
         first_name: Faker::Name.first_name(),
         last_name: Faker::Name.last_name(),
