@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_05_31_153141) do
   create_table "students", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "email"
     t.boolean "in_training"
     t.string "home_location"

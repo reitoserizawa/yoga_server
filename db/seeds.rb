@@ -26,7 +26,7 @@ in_training = [true, false]
     Student.create(
         first_name: Faker::Name.first_name(),
         last_name: Faker::Name.last_name(),
-        phone_number: Faker::PhoneNumber.cell_phone,
+        phone_number: Faker::PhoneNumber.phone_number,
         email: Faker::Internet.email,
         in_training: in_training.sample,
         home_location: Faker::Address.city,
